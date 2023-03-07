@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="pasta.js"></script>
+    <title>Calculadora-mille e moises</title>
+</head>
+<body>
+    <section>
+        <div class="total">
+        <p id="resultado"></p>
+        </div>
+        <div class="itens_numericos">
+            <button class="botao_secundario" onclick="limpar()">AC</button>
+            <button class="botao_secundario"onclick="apagar()">C</button>
+            <button class="botao_secundario" onclick="insert('%')">%</button>
+            <button class="botao" onclick="insert('/')">/</button>
+            <button class="botao_principal" onclick="insert('7')">7</button>
+            <button class="botao_principal" onclick="insert('8')">8</button>
+            <button class="botao_principal" onclick="insert('9')">9</button>
+            <button class="botao" onclick="insert('*')">x</button>
+            <button class="botao_principal" onclick="insert('4')">4</button>
+            <button class="botao_principal" onclick="insert('5')">5</button>
+            <button class="botao_principal" onclick="insert('6')">6</button>
+            <button class="botao" onclick="insert('-')">-</button>
+            <button class="botao_principal" onclick="insert('1')">1</button>
+            <button class="botao_principal" onclick="insert('2')">2</button>
+            <button class="botao_principal" onclick="insert('3')">3</button>
+            <button class="botao" onclick="insert('+')">+</button>
+            <button class="botao_principal" id="botao_zero" onclick="insert('0')">0</button>
+            <button class="botao_principal" id="botao_virg" data-action="decimal" onclick="insert(',')">,</button>
+            <button class="botao" id="botao_igual" onclick="calcular()">=</button>
+        </div>
+    </section>
+</body>
+</html>
